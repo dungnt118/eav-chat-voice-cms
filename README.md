@@ -91,3 +91,19 @@ order           INTEGER
               └──<Entity>──<EntityAttributeValue>──<Attribute>──<AttributeGroup>──<EntityType>
                                                         │
                                                 [EnumOption]
+**Ứng dụng
+- Lưu trữ mọi loại thông tin phổ thông để tra cứu như:
+* Sản phẩm:
+     + Các loại sản phẩm, thuộc tính sản phẩm, chỉ dẫn
+* FAQ
+     + Các tình huống thực tế, khó khăn và cách giải quyết
+* Kho tri thức (Knowledge)
+  
+=> Có thể lưu trữ như các đài liệu đào tạo để huấn luyện hoặc nhờ AI tra cứu và chăm sóc trả lời khách hàng, cũng như sử dụng làm trợ lý để hỗ trợ công việc.
+
+**Các chức năng cụ thể
+1. Kho tri thức (có thể lưu thông tin sản phẩm, bộ FAQ, quản lý theo từng Schema (đóng vai trò như 1 mục đích sử dụng khác nhau - tương đương như các Table của larksuit - có khả năng tùy biến rất cao)
+2. Quản lý Calendar (tích hợp với google calendar để lên lịch) => cái này sẽ sử dụng dữ liệu có cấu trúc để tiện đồng bộ lịch cá nhân ngươi dùng với google
+3. Tích hợp Chatbox kết hơp toolcall của openai để hỗ trợ người dùng
+4. Tích hợp Voice Chat => là trợ lý sử dụng giọng nói để hỗ trợ người dùng
+5. Quản lý Agent (lưu trữ các prompt hệ thống và phạm vi truy xuất thông tin tới các Schema nào để tìm kiếm thông tin - thông qua cơ chế toolcall)
